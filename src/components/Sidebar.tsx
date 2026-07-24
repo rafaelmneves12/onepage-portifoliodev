@@ -29,9 +29,9 @@ function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
           <p className="text-[11px] font-medium uppercase tracking-[0.24em] text-primary">
             Portfólio
           </p>
-          <h1 className="font-display text-2xl leading-tight text-foreground">
+          <p className="font-display text-2xl leading-tight text-foreground">
             {personalInfo.name}
-          </h1>
+          </p>
           <p className="text-sm text-muted-foreground">{personalInfo.role}</p>
         </div>
 
