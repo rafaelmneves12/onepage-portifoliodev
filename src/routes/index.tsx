@@ -7,6 +7,7 @@ import { Projects } from "@/components/Projects";
 import { Certificates } from "@/components/Certificates";
 import { Languages } from "@/components/Languages";
 import { Contact } from "@/components/Contact";
+import { Footer } from "@/components/Footer";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -22,6 +23,7 @@ function Index() {
       <Certificates />
       <Languages />
       <Contact />
+      <Footer />
     </MainLayout>
   );
 }

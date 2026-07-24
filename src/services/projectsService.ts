@@ -1,7 +1,6 @@
 import { projects } from "@/data/projects";
 import type { Project } from "@/types/project";
 
-// Simulated latency to mimic a real REST endpoint.
 const delay = (ms = 120) => new Promise<void>((r) => setTimeout(r, ms));
 
 export async function getProjects(): Promise<Project[]> {
