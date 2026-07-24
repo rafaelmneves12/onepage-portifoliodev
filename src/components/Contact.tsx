@@ -122,10 +122,6 @@ export function Contact() {
           </motion.div>
         </div>
 
-        <div className="mt-20 flex flex-col items-center justify-between gap-2 border-t border-border/60 pt-8 text-xs text-muted-foreground sm:flex-row">
-          <p>© {new Date().getFullYear()} Lucas Almeida — Feito com cuidado.</p>
-          <p>Front-End · Product · São Paulo</p>
-        </div>
       </div>
     </section>
   );
