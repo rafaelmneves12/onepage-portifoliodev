@@ -72,7 +72,7 @@ export function ProjectCard({ project, onView }: ProjectCardProps) {
         </div>
 
         <ul className="space-y-1.5 text-xs text-muted-foreground">
-          {project.features.slice(0, 3).map((f) => (
+          {project.features.slice(0, 10).map((f) => (
             <li key={f} className="flex items-start gap-2">
               <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-primary" />
               <span>{f}</span>

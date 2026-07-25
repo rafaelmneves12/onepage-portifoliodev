@@ -1,16 +1,17 @@
-import profilePhoto from "@/assets/profile.jpg";
+import profilePhoto from "@/assets/profile.png";
+import curriculum from "@/assets/rafael-neves-dev-curriculum.pdf";
 import type { PersonalInfo } from "@/types/personalInfo";
 
 export const personalInfo: PersonalInfo = {
-  name: "Lucas Almeida",
-  role: "Front-End Developer",
+  name: "Rafael Neves",
+  role: "Front-End Developer & Wordpress Website Developer",
   shortBio:
-    "Construo interfaces sofisticadas e produtos digitais com foco em performance, acessibilidade e detalhes que importam.",
+    "",
   longBio:
-    "Desenvolvedor Front-End com foco em React, TypeScript e design de produto. Trabalho na intersecção entre engenharia e design, criando experiências premium para startups e estúdios.",
-  location: "São Paulo, Brasil",
+    "Desenvolvedor Front-End com foco em React, TypeScript e Tailwind CSS e Desenvolvedor Wordpress em criações de Landing Pages, One-Page, Ecommerce e muito mais.",
+  location: "Rio de Janeiro, Brasil",
   photoUrl: profilePhoto,
-  resumeUrl: "/curriculo.pdf",
+  resumeUrl: curriculum,
   nav: [
     { label: "Sobre", href: "#sobre" },
     { label: "Tecnologias", href: "#tecnologias" },

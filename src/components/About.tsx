@@ -7,22 +7,22 @@ const highlights = [
   {
     icon: GraduationCap,
     title: "Formação",
-    body: "Graduação em Sistemas de Informação e cursos especializados em UI/UX, React e Design de Produto.",
+    body: "Graduação em Sistemas de Informação e cursos especializados em React + TypeScript e Tailwind CSS.",
   },
   {
     icon: Rocket,
     title: "Atuação",
-    body: "Aplicações web em React, sites institucionais, landing pages de alta conversão e sistemas internos.",
+    body: "Aplicações web com React e desenvolvimento de websites em WordPress.",
   },
   {
     icon: Sparkles,
     title: "Stack favorita",
-    body: "React, TypeScript, Tailwind CSS, Framer Motion e uma pitada de design system bem cuidado.",
+    body: "React, TypeScript, Tailwind CSS e uma pitada de design system bem cuidado.",
   },
   {
     icon: Target,
     title: "Objetivo",
-    body: "Unir engenharia e design para entregar produtos digitais com identidade e impacto real no negócio.",
+    body: "Unir Criação e design para entregar produtos digitais com identidade e impacto real.",
   },
 ];
 
@@ -35,7 +35,7 @@ export function About() {
       <div className="mx-auto max-w-6xl">
         <SectionTitle
           eyebrow="Sobre mim"
-          title="Engenharia com olhar de designer."
+          title="Desenvolvedor com olhar de dono."
           description="Trabalho na fronteira entre código e produto — construindo interfaces polidas, acessíveis e performáticas, com atenção obsessiva aos detalhes."
         />
 
@@ -50,19 +50,17 @@ export function About() {
             <motion.p variants={fadeUp}>
               Sou um desenvolvedor Front-End apaixonado por construir experiências
               digitais que combinam estética refinada com engenharia sólida. Ao longo
-              dos últimos anos, colaborei com startups e estúdios criando interfaces
-              que valorizam o produto e respeitam o usuário.
+              dos últimos anos eu estudei, apliquei e ampliei meu conhecimento atuando em projetos funcionais.
             </motion.p>
             <motion.p variants={fadeUp}>
               Meu foco está em <span className="text-foreground">React</span>,{" "}
               <span className="text-foreground">TypeScript</span> e{" "}
-              <span className="text-foreground">design systems</span>, mas também
-              transito com facilidade por WordPress, motion design e integrações
-              com APIs.
+              <span className="text-foreground">Tailwind CSS</span>, mas também
+              transito com facilidade por WordPress em desenvolvimento de websites.
             </motion.p>
             <motion.p variants={fadeUp}>
               Meu diferencial é enxergar cada projeto como um produto completo:
-              pensar arquitetura, performance, tipografia, animação e microinterações
+              pensar arquitetura, performance, tipografia, animação e interações
               como partes de uma mesma composição.
             </motion.p>
           </motion.div>

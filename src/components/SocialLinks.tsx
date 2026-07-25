@@ -17,7 +17,7 @@ export function SocialLinks({
     <ul
       className={cn(
         "flex items-center",
-        variant === "sidebar" ? "gap-2" : "gap-3",
+        variant === "sidebar" ? "gap-3" : "gap-3",
         className,
       )}
     >
@@ -34,7 +34,7 @@ export function SocialLinks({
               whileTap={{ scale: 0.94 }}
               transition={{ type: "spring", stiffness: 400, damping: 22 }}
               className={cn(
-                "group inline-flex h-10 w-10 items-center justify-center rounded-full border border-border/60 bg-card/40 text-muted-foreground transition-colors hover:border-primary/60 hover:text-primary",
+                "group inline-flex h-8 w-8 items-center justify-center rounded-full border border-border/60 bg-card/40 text-muted-foreground transition-colors hover:border-primary/60 hover:text-primary",
                 iconClassName,
               )}
             >

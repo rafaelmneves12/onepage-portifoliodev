@@ -13,7 +13,7 @@ export function Languages() {
         <SectionTitle
           eyebrow="Idiomas"
           title="Comunicação em três frentes."
-          description="Escrevo e falo em contextos técnicos e criativos, com fluência crescente em inglês e espanhol."
+          description="Diversidade linguística como ferramenta de conexão e expressão."
         />
 
         <motion.div

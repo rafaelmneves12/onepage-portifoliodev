@@ -11,8 +11,8 @@ export const languages: Language[] = [
   {
     id: "en",
     name: "Inglês",
-    level: "A2",
-    label: "A2 · Básico",
+    level: "B1",
+    label: "B1 · Intermediário",
     flag: "🇺🇸",
   },
   {

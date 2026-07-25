@@ -26,7 +26,7 @@ export function Projects() {
           <SectionTitle
             eyebrow="Projetos"
             title="Trabalhos selecionados."
-            description="Uma amostra do que venho construindo — de produtos SaaS a landing pages editoriais."
+            description="Uma amostra do que venho construindo — Divesidade de websites e interfaces dinamicas."
           />
 
           <div className="flex flex-wrap gap-2">
@@ -34,6 +34,7 @@ export function Projects() {
               const isActive = filter === cat;
               return (
                 <button
+                  style={{ cursor: "pointer" }}
                   key={cat}
                   type="button"
                   onClick={() => setFilter(cat)}

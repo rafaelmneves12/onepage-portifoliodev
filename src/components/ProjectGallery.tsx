@@ -11,6 +11,23 @@ interface ProjectGalleryProps {
 
 export function ProjectGallery({ project, open, onClose }: ProjectGalleryProps) {
   const [index, setIndex] = useState(0);
+  const [zoom, setZoom] = useState(false);
+  const [position, setPosition] = useState({
+    x: 50,
+    y: 50,
+  });
+
+  const handleMouseMove = (
+    e: React.MouseEvent<HTMLDivElement>
+  ) => {
+    const { left, top, width, height } =
+      e.currentTarget.getBoundingClientRect();
+
+    const x = ((e.clientX - left) / width) * 100;
+    const y = ((e.clientY - top) / height) * 100;
+
+    setPosition({ x, y });
+  };
 
   useEffect(() => {
     if (open) setIndex(0);
@@ -87,16 +104,28 @@ export function ProjectGallery({ project, open, onClose }: ProjectGalleryProps) 
             onClick={(e) => e.stopPropagation()}
           >
             <AnimatePresence mode="wait">
-              <motion.img
+              <motion.div
                 key={index}
-                src={project.gallery[index]}
-                alt={`${project.title} — imagem ${index + 1}`}
                 initial={{ opacity: 0, scale: 0.98 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.98 }}
                 transition={{ duration: 0.3 }}
-                className="max-h-full max-w-full rounded-xl border border-border/60 object-contain shadow-2xl"
-              />
+                className="h-full rounded-xl"
+                onMouseEnter={() => setZoom(true)}
+                onMouseLeave={() => setZoom(false)}
+                onMouseMove={handleMouseMove}
+              >
+                <img
+                  src={project.gallery[index]}
+                  alt={`${project.title} — imagem ${index + 1}`}
+                  className="max-h-full max-w-full object-contain transition-transform duration-75"
+                  style={{
+                    transform: zoom ? "scale(3)" : "scale(1)",
+                    transformOrigin: `${position.x}% ${position.y}%`,
+                    cursor: zoom ? "zoom-in" : "default",
+                  }}
+                />
+              </motion.div>
             </AnimatePresence>
 
             {total > 1 ? (

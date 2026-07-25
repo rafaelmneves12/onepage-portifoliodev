@@ -56,7 +56,7 @@ export function Contact() {
 
             <p className="mt-10 max-w-md text-sm text-muted-foreground">
               Prefere formal? Envie um email. Prefere rápido? WhatsApp. Prefere
-              networking? LinkedIn. Só não fique em silêncio.
+              networking? LinkedIn. Mas pode contar comigo para seu projeto acontecer.
             </p>
           </motion.div>
 
@@ -95,7 +95,7 @@ export function Contact() {
                 key="linkedin"
                 icon={Linkedin}
                 label="LinkedIn"
-                value="/in/lucasalmeida"
+                value="/in/rafael-mattos-neves-97a180274"
                 href={contactInfo.linkedin}
                 external
               />,
@@ -103,7 +103,7 @@ export function Contact() {
                 key="github"
                 icon={Github}
                 label="GitHub"
-                value="@lucasalmeida"
+                value="@rafaelmneves12"
                 href={contactInfo.github}
                 external
               />,

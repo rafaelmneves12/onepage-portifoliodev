@@ -31,7 +31,7 @@ export function Certificates() {
         <SectionTitle
           eyebrow="Certificados"
           title="Aprendizado contínuo, com registro."
-          description="Uma seleção de cursos, bootcamps e formações que moldaram minha atuação."
+          description="Uma seleção de cursos e formações que moldaram minha atuação."
         />
 
         <motion.div

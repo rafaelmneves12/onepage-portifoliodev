@@ -2,7 +2,7 @@ import type { ComponentType, SVGProps } from "react";
 
 export type TechLevel = "Básico" | "Intermediário" | "Avançado";
 
-export type TechCategory = "Frontend" | "Backend" | "Ferramentas";
+export type TechCategory = "Frontend" | "Ferramentas";
 
 export interface Technology {
   id: string;

@@ -1,58 +1,40 @@
-import cert1 from "@/assets/certificates/cert-1.jpg";
-import cert2 from "@/assets/certificates/cert-2.jpg";
-import cert3 from "@/assets/certificates/cert-3.jpg";
-import cert4 from "@/assets/certificates/cert-4.jpg";
-import cert5 from "@/assets/certificates/cert-5.jpg";
-import cert6 from "@/assets/certificates/cert-6.jpg";
+import certReact from "@/assets/certificates/cert-react.png";
+import certUnfinished from "@/assets/certificates/cert-unfinished.jpg";
+import certPacoteOffice from '@/assets/certificates/cert-pacote-office.png';
+
 import type { Certificate } from "@/types/certificate";
 
 export const certificates: Certificate[] = [
   {
+    id: "degree",
+    title: "Sistemas de Informação - Bacharelado",
+    institution: "UNISUAM",
+    date: "In Progress - Dec 2027",
+    hours: "4 anos",
+    image: certUnfinished,
+  },
+  {
     id: "react-advanced",
-    title: "React Avançado — Padrões e Performance",
-    institution: "Rocketseat",
+    title: "React do Zero ao Avançado na Prática",
+    institution: "Udemy (Matheus Fraga)",
     date: "Fev 2025",
-    hours: "80h",
-    image: cert1,
+    hours: "24.5hrs",
+    image: certReact,
   },
   {
-    id: "typescript-pro",
-    title: "TypeScript Profissional",
-    institution: "Origamid",
-    date: "Nov 2024",
+    id: "typescript-advanced",
+    title: "React + TypeScript do Zero ao Avançado na Prática",
+    institution: "Udemy (Matheus Fraga)",
+    date: "In Progress",
     hours: "42h",
-    image: cert2,
+    image: certUnfinished,
   },
   {
-    id: "design-systems",
-    title: "Design Systems na Prática",
-    institution: "Alura",
-    date: "Ago 2024",
-    hours: "36h",
-    image: cert3,
-  },
-  {
-    id: "ui-ux-foundations",
-    title: "Fundamentos de UI/UX Design",
-    institution: "Interaction Design Foundation",
-    date: "Mai 2024",
-    hours: "60h",
-    image: cert4,
-  },
-  {
-    id: "fullstack-bootcamp",
-    title: "Full-Stack Web Development",
-    institution: "Trybe",
-    date: "Jan 2024",
-    hours: "900h",
-    image: cert5,
-  },
-  {
-    id: "motion-web",
-    title: "Motion Design para Web",
-    institution: "School of Motion",
-    date: "Out 2023",
-    hours: "24h",
-    image: cert6,
+    id: "pacote-office",
+    title: "Pacote Office 2016 - Word, Excel e PowerPoint",
+    institution: "Fundação Bradesco",
+    date: "Abr 2023",
+    hours: "110h",
+    image: certPacoteOffice,
   },
 ];

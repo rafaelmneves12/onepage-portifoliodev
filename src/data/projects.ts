@@ -1,57 +1,66 @@
-import cover1 from "@/assets/projects/project-1.jpg";
-import cover2 from "@/assets/projects/project-2.jpg";
-import cover3 from "@/assets/projects/project-3.jpg";
-import cover4 from "@/assets/projects/project-4.jpg";
-import cover5 from "@/assets/projects/project-5.jpg";
-import cover6 from "@/assets/projects/project-6.jpg";
+import coverThumbnail1 from "@/assets/projects/thumbnail-1.png";
+import coverThumbnail2 from "@/assets/projects/thumbnail-2.png";
+import cover1A from "@/assets/projects/project-1A.png";
+import cover1B from "@/assets/projects/project-1B.png";
+import cover2A from "@/assets/projects/project-2A.png";
+import cover2B from "@/assets/projects/project-2B.png";
+import cover2C from "@/assets/projects/project-2C.png";
+import cover2D from "@/assets/projects/project-2D.png";
 import type { Project } from "@/types/project";
 
 export const projects: Project[] = [
   {
-    id: "nova-analytics",
-    title: "Nova Analytics",
+    id: "imports-gtts-store",
+    title: "Ecommerce de Moda Masculina (ImportsGtts)",
     description:
-      "Plataforma SaaS de analytics com dashboards em tempo real, relatórios customizáveis e integrações via API.",
-    category: "React",
-    cover: cover1,
-    gallery: [cover1, cover5, cover3],
-    technologies: ["React", "TypeScript", "Tailwind", "REST API"],
+      "Desenvolvimento de um website moderno e totalmente responsivo em WooCommerce, utilizando WordPress, Elementor e plugins para o segmento de moda masculina. O projeto foi desenvolvido com uma abordagem mobile-first, priorizando uma interface e experiência do usuário (UI/UX) personalizadas, otimização para SEO, alto desempenho de carregamento e uma experiência de compra fluida.",
+    category: "WordPress",
+    cover: coverThumbnail1,
+    gallery: [cover1A, cover1B],
+    technologies: ["WordPress", "WooCommerce", "Elementor", "Plugins", "CSS", "Canva"],
     features: [
-      "Dashboard em tempo real com WebSockets",
-      "Exportação de relatórios em PDF/CSV",
-      "Integração com APIs externas",
-      "Sistema de permissões por papel",
+      "Mobile-First e Layout Responsivo",
+      "WooCommerce Customizado com Elementor",
+      "Integrações com gateways de pagamento",
+      "Banners Estratégicos e Otimização de Conversão",
+      "Páginas de Produtos Personalizadas",
+      "Alto Desempenho de Carregamento",
+      "UI/UX Personalizada",
     ],
-    date: "Mar 2025",
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    date: "Dez 2023",
+    liveUrl: "",
+    githubUrl: "",
   },
   {
-    id: "mazlus-store",
-    title: "Mazlus Store",
+    id: "zenavra-store",
+    title: "Ecommerce de Moda Feminina (Zenavra)",
     description:
-      "E-commerce premium com foco em joalheria digital, checkout otimizado e experiência editorial.",
-    category: "Landing Pages",
-    cover: cover2,
-    gallery: [cover2, cover6, cover4],
-    technologies: ["React", "Tailwind", "Firebase"],
+      "Desenvolvimento de uma loja virtual moderna e totalmente responsiva em Shopify, utilizando o tema Horizon, voltada para o segmento de beleza feminina. O projeto foi desenvolvido com foco em desempenho, otimização para SEO, navegação intuitiva e uma experiência de compra premium.",
+    category: "Shopify",
+    cover: coverThumbnail2,
+    gallery: [cover2A, cover2B, cover2C, cover2D],
+    technologies: ["Shopify", "Apps", "ChatGPT", "Liquid", "CSS", "Canva"],
     features: [
-      "Checkout em uma página",
-      "Wishlist persistente",
+      "Design Responsivo e Mobile-First",
+      "UI/UX Moderna e Alto Desempenho de Carregamento",
       "Integração com meios de pagamento",
-      "SEO técnico avançado",
+      "Páginas de Produtos Personalizadas",
+      "Variantes de Produtos e Amostras de Cores (Swatches)",
+      "Perguntas Frequentes (FAQs)",
+      "Formulários de Contato",
     ],
-    date: "Jan 2025",
-    liveUrl: "https://example.com",
+    date: "Mai 2026",
+    liveUrl: "",
+    githubUrl: "",
   },
   {
-    id: "pulse-fit",
-    title: "PulseFit",
+    id: "unfinished",
+    title: "unfinished",
     description:
-      "App mobile-first de acompanhamento fitness com métricas, planos personalizados e gamificação.",
+      "unfinished.",
     category: "React",
-    cover: cover3,
-    gallery: [cover3, cover1],
+    cover: coverThumbnail1,
+    gallery: [cover1A],
     technologies: ["React", "TypeScript", "Firebase"],
     features: [
       "Treinos personalizados por IA",
@@ -60,16 +69,17 @@ export const projects: Project[] = [
       "Notificações e streaks",
     ],
     date: "Nov 2024",
-    githubUrl: "https://github.com",
+    liveUrl: "",
+    githubUrl: "",
   },
   {
-    id: "atelier-lumen",
-    title: "Atelier Lumen",
+    id: "unfinished",
+    title: "unfinished",
     description:
-      "Website institucional de estúdio de arquitetura com storytelling editorial e portfólio visual.",
+      "unfinished.",
     category: "WordPress",
-    cover: cover4,
-    gallery: [cover4, cover6],
+    cover: coverThumbnail1,
+    gallery: [cover1A],
     technologies: ["WordPress", "Elementor", "CSS"],
     features: [
       "Design 100% editorial",
@@ -81,13 +91,13 @@ export const projects: Project[] = [
     liveUrl: "https://example.com",
   },
   {
-    id: "core-crm",
-    title: "Core CRM",
+    id: "unfinished",
+    title: "unfinished",
     description:
-      "Sistema interno de CRM com pipeline visual, automações e módulo financeiro integrado.",
-    category: "Sistemas",
-    cover: cover5,
-    gallery: [cover5, cover1, cover3],
+      "unfinished.",
+    category: "React",
+    cover: coverThumbnail1,
+    gallery: [cover1A],
     technologies: ["React", "TypeScript", "REST API", "Python"],
     features: [
       "Kanban de leads com drag-and-drop",
@@ -99,13 +109,13 @@ export const projects: Project[] = [
     githubUrl: "https://github.com",
   },
   {
-    id: "sereno-restaurante",
-    title: "Sereno Restaurante",
+    id: "unfinished",
+    title: "unfinished",
     description:
-      "Landing page premium para restaurante autoral, com cardápio digital e sistema de reservas.",
-    category: "Landing Pages",
-    cover: cover6,
-    gallery: [cover6, cover2, cover4],
+      "unfinished.",
+    category: "WordPress",
+    cover: coverThumbnail1,
+    gallery: [cover1A],
     technologies: ["React", "Tailwind", "Firebase"],
     features: [
       "Cardápio digital dinâmico",
@@ -122,8 +132,6 @@ export const projectCategories = [
   "Todos",
   "React",
   "WordPress",
-  "Landing Pages",
-  "Sistemas",
 ] as const;
 
 export type ProjectFilter = (typeof projectCategories)[number];

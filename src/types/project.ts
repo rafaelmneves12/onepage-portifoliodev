@@ -1,4 +1,4 @@
-export type ProjectCategory = "React" | "WordPress" | "Landing Pages" | "Sistemas";
+export type ProjectCategory = "React" | "WordPress" | "Shopify";
 
 export interface Project {
   id: string;

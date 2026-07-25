@@ -82,7 +82,9 @@ export function Hero() {
               </a>
             </Button>
             <Button asChild size="xl" variant="gold">
-              <a href={personalInfo.resumeUrl} download>
+              <a href={personalInfo.resumeUrl} 
+              download="Rafael-de-Mattos-Neves-Curriculo.pdf"
+              >
                 <Download className="h-4 w-4" />
                 Baixar currículo
               </a>
@@ -94,9 +96,9 @@ export function Hero() {
             className="mt-14 grid max-w-md grid-cols-3 gap-6 border-t border-border/60 pt-8"
           >
             {[
-              { k: "5+", v: "Anos de experiência" },
-              { k: "40+", v: "Projetos entregues" },
-              { k: "12+", v: "Clientes atendidos" },
+              { k: "2+", v: "Anos de experiência" },
+              { k: "3+", v: "Projetos entregues" },
+              { k: "2+", v: "Clientes atendidos" },
             ].map((stat) => (
               <div key={stat.v}>
                 <p className="font-display text-3xl text-foreground">{stat.k}</p>
@@ -132,7 +134,7 @@ export function Hero() {
               <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between rounded-xl border border-border/60 bg-background/70 px-4 py-3 backdrop-blur">
                 <div className="flex items-center gap-2 text-xs uppercase tracking-[0.24em] text-muted-foreground">
                   <Sparkles className="h-3.5 w-3.5 text-[color:var(--gold)]" />
-                  Front-End · Product
+                  Front-End | Wordpress
                 </div>
                 <span className="text-xs text-foreground">{personalInfo.location}</span>
               </div>

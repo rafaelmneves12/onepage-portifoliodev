@@ -18,7 +18,6 @@ const levelValue: Record<TechLevel, number> = {
 
 const categories: { key: TechCategory; label: string; hint: string }[] = [
   { key: "Frontend", label: "Frontend", hint: "Interfaces e experiência" },
-  { key: "Backend", label: "Backend", hint: "Conhecimento" },
   { key: "Ferramentas", label: "Ferramentas", hint: "Fluxo diário" },
 ];
 
@@ -47,10 +46,10 @@ function TechnologyCard({ tech }: { tech: Technology }) {
               <Icon className="h-5 w-5" />
             </div>
             <div className="min-w-0 flex-1">
-              <p className="truncate text-sm font-medium text-foreground">
+              <p className="truncate text-xs font-medium text-foreground">
                 {tech.name}
               </p>
-              <p className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
+              <p className="text-[8px] uppercase tracking-[0.18em] text-muted-foreground">
                 {tech.level}
               </p>
             </div>

@@ -8,9 +8,9 @@ import { cn } from "@/lib/utils";
 
 function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
   return (
-    <div className="flex h-full flex-col gap-8 p-8">
+    <div className="flex h-screen flex-col gap p-6">
       {/* Photo + identity */}
-      <div className="flex flex-col items-start gap-5">
+      <div className="flex flex-col items-start gap-3">
         <div className="relative">
           <div
             aria-hidden
@@ -21,21 +21,21 @@ function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
             alt={personalInfo.name}
             width={112}
             height={112}
-            className="relative h-28 w-28 rounded-full border border-border/60 object-cover"
+            className="relative h-20 w-20 rounded-full border border-border/60 object-cover"
           />
         </div>
 
         <div className="space-y-1.5">
-          <p className="text-[11px] font-medium uppercase tracking-[0.24em] text-primary">
+          <p className="text-[8px] font-medium uppercase tracking-[0.24em] text-primary">
             Portfólio
           </p>
-          <p className="font-display text-2xl leading-tight text-foreground">
+          <p className="font-display text-xl leading-tight text-foreground">
             {personalInfo.name}
           </p>
-          <p className="text-sm text-muted-foreground">{personalInfo.role}</p>
+          <p className="text-xs text-muted-foreground">{personalInfo.role}</p>
         </div>
 
-        <p className="text-sm leading-relaxed text-muted-foreground/90">
+        <p className="text-[10px] leading-relaxed text-muted-foreground/90">
           {personalInfo.shortBio}
         </p>
       </div>
@@ -48,7 +48,7 @@ function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
               <a
                 href={item.href}
                 onClick={onNavigate}
-                className="group flex items-center gap-3 rounded-md px-2 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+                className="group flex items-center gap-3 rounded-md px-2 py-2 text-xs text-muted-foreground transition-colors hover:text-foreground"
               >
                 <span
                   aria-hidden
@@ -62,15 +62,15 @@ function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
       </nav>
 
       {/* Footer */}
-      <div className="space-y-5 border-t border-border/60 pt-6">
+      <div className="space-y-4 border-t border-border/60 pt-6">
         <SocialLinks />
-        <Button asChild size="lg" variant="subtle" className="w-full">
+        <Button asChild size="sm" variant="subtle" className="w-full">
           <a href={personalInfo.resumeUrl} download>
             <Download className="h-4 w-4" />
             Baixar currículo
           </a>
         </Button>
-        <p className="text-[11px] uppercase tracking-[0.24em] text-muted-foreground/70">
+        <p className="text-[8px] uppercase tracking-[0.24em] text-muted-foreground/70">
           {personalInfo.location}
         </p>
       </div>
