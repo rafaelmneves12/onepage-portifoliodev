@@ -10,6 +10,7 @@ interface CertificateCardProps {
 export function CertificateCard({ certificate, onOpen }: CertificateCardProps) {
   return (
     <motion.button
+      style={{ cursor: "pointer" }}
       type="button"
       onClick={() => onOpen(certificate)}
       whileHover={{ y: -6 }}
